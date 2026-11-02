@@ -1,0 +1,183 @@
+{
+  "model": "microsoft/trocr-small-printed",
+  "num_samples": 8,
+  "exact_match_accuracy": 50.0,
+  "normalized_exact_match": 62.5,
+  "mean_raw_cer": 0.3093136433459014,
+  "mean_norm_cer": 0.014984639016897082,
+  "mean_raw_wer": 0.40625,
+  "mean_norm_wer": 0.0875,
+  "average_latency_ms": 592.0257270336151,
+  "category_metrics": {
+    "quote": {
+      "raw_cer": 0.86,
+      "norm_cer": 0.04,
+      "norm_wer": 0.2,
+      "mean_latency_ms": 717.451810836792
+    },
+    "receipt": {
+      "raw_cer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "mean_latency_ms": 513.2708549499512
+    },
+    "pangram": {
+      "raw_cer": 0.7727272727272727,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "mean_latency_ms": 676.3694286346436
+    },
+    "code": {
+      "raw_cer": 0.8095238095238095,
+      "norm_cer": 0.047619047619047616,
+      "norm_wer": 0.25,
+      "mean_latency_ms": 593.2488441467285
+    },
+    "invoice": {
+      "raw_cer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "mean_latency_ms": 632.6084136962891
+    },
+    "sign": {
+      "raw_cer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "mean_latency_ms": 457.99875259399414
+    },
+    "medical": {
+      "raw_cer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "mean_latency_ms": 544.2004203796387
+    },
+    "degraded": {
+      "raw_cer": 0.03225806451612903,
+      "norm_cer": 0.03225806451612903,
+      "norm_wer": 0.25,
+      "mean_latency_ms": 601.0572910308838
+    }
+  },
+  "results": [
+    {
+      "id": "ocr_1",
+      "image": "sample_quote.png",
+      "category": "quote",
+      "ground_truth": "Artificial Intelligence is transforming computing.",
+      "prediction": "ARTRICIAL INTELLIGENCE IS TRANSFORMING COMPUTING.",
+      "raw_cer": 0.86,
+      "raw_wer": 1.0,
+      "norm_cer": 0.04,
+      "norm_wer": 0.2,
+      "exact_match": false,
+      "norm_exact_match": false,
+      "latency_ms": 717.451810836792,
+      "chars_per_sec": 68.29726994883376
+    },
+    {
+      "id": "ocr_2",
+      "image": "sample_receipt.png",
+      "category": "receipt",
+      "ground_truth": "TOTAL AMOUNT DUE: $48.95",
+      "prediction": "TOTAL AMOUNT DUE: $48.95",
+      "raw_cer": 0.0,
+      "raw_wer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "exact_match": true,
+      "norm_exact_match": true,
+      "latency_ms": 513.2708549499512,
+      "chars_per_sec": 46.758937836710466
+    },
+    {
+      "id": "ocr_3",
+      "image": "sample_pangram.png",
+      "category": "pangram",
+      "ground_truth": "The quick brown fox jumps over the lazy dog.",
+      "prediction": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.",
+      "raw_cer": 0.7727272727272727,
+      "raw_wer": 1.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "exact_match": false,
+      "norm_exact_match": true,
+      "latency_ms": 676.3694286346436,
+      "chars_per_sec": 65.0532063355093
+    },
+    {
+      "id": "ocr_4",
+      "image": "sample_code.png",
+      "category": "code",
+      "ground_truth": "import torch.nn as nn",
+      "prediction": "INPORT TORCH.NN AS NN",
+      "raw_cer": 0.8095238095238095,
+      "raw_wer": 1.0,
+      "norm_cer": 0.047619047619047616,
+      "norm_wer": 0.25,
+      "exact_match": false,
+      "norm_exact_match": false,
+      "latency_ms": 593.2488441467285,
+      "chars_per_sec": 35.39829905645136
+    },
+    {
+      "id": "ocr_5",
+      "image": "sample_invoice.png",
+      "category": "invoice",
+      "ground_truth": "INVOICE #94820 DATE: 2026-11-02",
+      "prediction": "INVOICE #94820 DATE: 2026-11-02",
+      "raw_cer": 0.0,
+      "raw_wer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "exact_match": true,
+      "norm_exact_match": true,
+      "latency_ms": 632.6084136962891,
+      "chars_per_sec": 49.00345826712777
+    },
+    {
+      "id": "ocr_6",
+      "image": "sample_sign.png",
+      "category": "sign",
+      "ground_truth": "SPEED LIMIT 35 MPH",
+      "prediction": "SPEED LIMIT 35 MPH",
+      "raw_cer": 0.0,
+      "raw_wer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "exact_match": true,
+      "norm_exact_match": true,
+      "latency_ms": 457.99875259399414,
+      "chars_per_sec": 39.30141708476793
+    },
+    {
+      "id": "ocr_7",
+      "image": "sample_medical.png",
+      "category": "medical",
+      "ground_truth": "DOSAGE: TAKE 2 TABLETS DAILY",
+      "prediction": "DOSAGE: TAKE 2 TABLETS DAILY",
+      "raw_cer": 0.0,
+      "raw_wer": 0.0,
+      "norm_cer": 0.0,
+      "norm_wer": 0.0,
+      "exact_match": true,
+      "norm_exact_match": true,
+      "latency_ms": 544.2004203796387,
+      "chars_per_sec": 51.451632434364846
+    },
+    {
+      "id": "ocr_8",
+      "image": "sample_degraded.png",
+      "category": "degraded",
+      "ground_truth": "PYTORCH DEEP LEARNING FRAMEWORK",
+      "prediction": "PYTORCH DEEP LEARING FRAMEWORK",
+      "raw_cer": 0.03225806451612903,
+      "raw_wer": 0.25,
+      "norm_cer": 0.03225806451612903,
+      "norm_wer": 0.25,
+      "exact_match": false,
+      "norm_exact_match": false,
+      "latency_ms": 601.0572910308838,
+      "chars_per_sec": 49.912047399918364
+    }
+  ]
+}

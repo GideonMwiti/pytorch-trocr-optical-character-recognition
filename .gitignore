@@ -1,0 +1,20 @@
+# Python / Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+ENV/
+
+# Model weights & caches
+*.pt
+*.pth
+*.bin
+*.safetensors
+.cache/
+
+# OS specific
+.DS_Store
+Thumbs.db

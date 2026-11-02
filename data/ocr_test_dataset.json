@@ -1,0 +1,62 @@
+{
+  "benchmark_name": "TrOCR-OCR-Standard-Evaluation-Suite",
+  "version": "1.0",
+  "samples": [
+    {
+      "id": "ocr_1",
+      "image": "sample_quote.png",
+      "ground_truth": "Artificial Intelligence is transforming computing.",
+      "category": "quote",
+      "description": "Standard printed sentence with mixed case and punctuation"
+    },
+    {
+      "id": "ocr_2",
+      "image": "sample_receipt.png",
+      "ground_truth": "TOTAL AMOUNT DUE: $48.95",
+      "category": "receipt",
+      "description": "Financial receipt line with currency symbol and digits"
+    },
+    {
+      "id": "ocr_3",
+      "image": "sample_pangram.png",
+      "ground_truth": "The quick brown fox jumps over the lazy dog.",
+      "category": "pangram",
+      "description": "Classic English pangram exercising all alphabet letters"
+    },
+    {
+      "id": "ocr_4",
+      "image": "sample_code.png",
+      "ground_truth": "import torch.nn as nn",
+      "category": "code",
+      "description": "Programming source code statement with dot notation"
+    },
+    {
+      "id": "ocr_5",
+      "image": "sample_invoice.png",
+      "ground_truth": "INVOICE #94820 DATE: 2026-11-02",
+      "category": "invoice",
+      "description": "Invoice header with hash symbol, hyphens, and numeric date"
+    },
+    {
+      "id": "ocr_6",
+      "image": "sample_sign.png",
+      "ground_truth": "SPEED LIMIT 35 MPH",
+      "category": "sign",
+      "description": "Highway / road speed limit signage in uppercase"
+    },
+    {
+      "id": "ocr_7",
+      "image": "sample_medical.png",
+      "ground_truth": "DOSAGE: TAKE 2 TABLETS DAILY",
+      "category": "medical",
+      "description": "Pharmaceutical prescription label instruction"
+    },
+    {
+      "id": "ocr_8",
+      "image": "sample_degraded.png",
+      "ground_truth": "PYTORCH DEEP LEARNING FRAMEWORK",
+      "category": "degraded",
+      "description": "Degraded scan with additive Gaussian noise and slight blur"
+    }
+  ]
+}
