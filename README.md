@@ -166,3 +166,4 @@ The benchmark automatically generates a 4-panel visual report (`outputs/trocr_di
 - Li et al., *"TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models"*, AAAI 2023.
 - Touvron et al., *"Training data-efficient image transformers & distillation through attention (DeiT)"*, ICML 2021.
 - Wang et al., *"MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers"*, NeurIPS 2020.
+
